@@ -1,0 +1,202 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: Arial, Georgia, Helvetica;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 40px;
+  background: black;
+  color: white;
+}
+
+nav * {
+  float: left;
+  width: 10%;
+  display: block;
+}
+
+nav>ul {
+  margin: 0;
+  padding-left: 325px;
+  width: 70%;
+  list-style: none;
+}
+
+nav>ul img {
+  height: 40px;
+  width: 60px;
+}
+
+nav>ul>li {
+  padding: 12px 0;
+  width: 9%;
+  border-left: 1px solid gray;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+nav>form {
+  border-left: 1px solid gray;
+  padding: 4px 0 13px 25px;
+  width: 11%;
+}
+
+nav>form>input {
+  width: 100%;
+}
+
+main>h2 {
+  color: rgb(74, 74, 74);
+}
+
+h2>span {
+  color: rgb(140, 140, 140);
+  font-weight: 300;
+  float: right;
+}
+
+main>section {
+  width: 50%;
+  height: 351px;
+  color: rgb(255, 255, 255);
+  float: left;
+}
+
+.topHead>section {
+  background-image: url(../israel.jpg);
+  background-repeat: no-repeat;
+  height: 350px;
+  padding-top: 215px;
+  padding-left: 20px;
+}
+
+.topHead>section>p {
+  color: rgb(49, 49, 49);
+}
+
+/* 1st section after <main>, sibling of 1st section then all children of that section */
+/*main>section+section>section*/
+
+main>.topHead+.spotLight>section {
+  width: 50%;
+  height: 179px;
+  float: left;
+}
+
+.spotLight1 {
+  background-image: url(../us_can_flag.jpg);
+  background-repeat: no-repeat;
+}
+
+.spotLight1>h3,
+.spotLight1>span {
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+.spotLight2 {
+  background-image: url(../vaccine.jpg);
+  background-repeat: no-repeat;
+}
+
+.spotLight2>h3,
+.spotLight2>span {
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+.spotLight3 {
+  background-image: url(../productive.jpg);
+  background-repeat: no-repeat;
+}
+
+.spotLight3>h3,
+.spotLight3>span {
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+.spotLight4 {
+  background-image: url(../folk_singer.jpg);
+  background-repeat: no-repeat;
+}
+
+.spotLight4>h3,
+.spotLight4>span {
+  padding-top: 75px;
+  padding-left: 10px;
+}
+
+main+.news>h2{
+  color: rgb(74, 74, 74);
+}
+main+.news>section {
+  width: 33.33%;
+  height: 250px;
+  float: left;
+}
+
+main+.news>.news1 {
+  background-image: url(../harris_biden.jpg);
+  background-repeat: no-repeat;
+}
+
+main+.news>.news2 {
+  background-image: url(../peace.jpg);
+  background-repeat: no-repeat;
+}
+
+main+.news>.news3 {
+  background-image: url(../trump.jpg);
+  background-repeat: no-repeat;
+}
+
+.news1>h3,
+.news1>span,
+.news2>h3,
+.news2>span,
+.news3>h3,
+.news3>span {
+  padding-top: 255px;
+}
+
+main,
+main+section {
+  margin: 0 325px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
